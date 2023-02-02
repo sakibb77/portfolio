@@ -53,8 +53,9 @@ body {
   width: 100%;
 }
 
-.hero-image {
-  width: 30vw;
+.hero-image,
+.project-right {
+  width: 25vw;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
@@ -68,6 +69,12 @@ body {
   font-size: 10rem;
   font-family: "cosi Azure", sans-serif;
   z-index: 100;
+}
+
+.section-title {
+  font-family: "Cosi Azure", sans-serif;
+  font-size: 5vw;
+  line-height: 1;
 }
 
 .hero .shutter-left {
@@ -94,7 +101,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -9999;
-  opacity: 0.08;
+  opacity: 0.07;
 }
 
 .circle-left,

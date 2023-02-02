@@ -36,7 +36,12 @@ const Navbar = () => {
           </HashLink>
         </li>
         <li className="self-end">
-          <a href="google.com" target="_blank" className="link-item">
+          <a
+            href="google.com"
+            target="_blank"
+            rel="noreferrer"
+            className="link-item"
+          >
             resume
           </a>
         </li>
