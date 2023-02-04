@@ -130,3 +130,32 @@ body {
   bottom: -40%;
   right: -20%;
 }
+
+.skill-item {
+  position: relative;
+}
+
+.skill-item::before,
+.skill-item::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--color-lighter);
+}
+
+.skill-item::before {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.skill-item::after {
+  width: 0;
+  background-color: #22d3ee;
+  transition: 0.5s;
+}
+
+.skill-item:hover::after {
+  width: 100%;
+}
