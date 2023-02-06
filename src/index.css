@@ -32,11 +32,18 @@ body {
   word-spacing: 3px;
 }
 
-.link-item {
+input[type="submit"] {
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+.link-item,
+.logo a {
   position: relative;
 }
 
-.link-item::after {
+.link-item::after,
+.logo a::after {
   content: "";
   position: absolute;
   display: block;
@@ -50,6 +57,10 @@ body {
 }
 
 .link-item:hover::after {
+  width: 100%;
+}
+
+.logo a:hover::after {
   width: 100%;
 }
 
@@ -158,4 +169,10 @@ body {
 
 .skill-item:hover::after {
   width: 100%;
+}
+
+.about-left {
+  width: 25vw;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
