@@ -1,18 +1,23 @@
 import { useRef } from "react";
+import { useProjectLeftRightReveal } from "../hooks/gsap";
 import { useHoverEffect } from "../hooks/useHoverEffect";
 import SectionTitle from "./SectionTitle";
 
 const data = {
   image1:
-    "https://images.pexels.com/photos/14807476/pexels-photo-14807476.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://res.cloudinary.com/doywcvyxn/image/upload/v1675757885/personal-portfolio/portfolio-image-1_udhdyg.png",
   image2:
-    "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://res.cloudinary.com/doywcvyxn/image/upload/v1675758167/personal-portfolio/portfolio-image-2_yus7cu.jpg",
 };
 
 const About = () => {
-  const aboutImageRef = useRef(null);
+  const aboutLeftRef = useRef(null);
+  const aboutRightRef = useRef(null);
 
-  useHoverEffect(aboutImageRef, data.image1, data.image2);
+  const abouts = [aboutLeftRef, aboutRightRef];
+
+  useHoverEffect(aboutLeftRef, data.image1, data.image2);
+  useProjectLeftRightReveal(abouts);
 
   return (
     <div className="about container mx-auto mt-40 " id="about">
@@ -20,9 +25,9 @@ const About = () => {
       <div className="about-wrapper grid grid-cols-2 mt-40 gap-20 overflow-hidden">
         <div
           className="about-left self-center justify-self-center"
-          ref={aboutImageRef}
+          ref={aboutLeftRef}
         ></div>
-        <div className="about-right">
+        <div className="about-right" ref={aboutRightRef}>
           <p>
             Hi, I'm Sakib, a passionate and self-taught React developer. I have
             a strong expertise in building high-performance and scalable web

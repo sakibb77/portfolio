@@ -4,28 +4,19 @@ import SectionTitle from "./SectionTitle";
 const data = [
   {
     id: 1,
-    title: "TORQUE XTREME — A CAR REPAIR SERVICE",
-    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1675265033/Personal%20Portfolio%202/torque-1_hqxafc.jpg",
+    title: "Foodverse - Recipe Ingredient App",
+    img1: "https://res.cloudinary.com/doywcvyxn/image/upload/v1675755184/personal-portfolio/pf-s73-eve-set-14-mockup-Recovered_ui8bdl.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1675265034/Personal%20Portfolio%202/torque-2_fawp9c.png",
     description:
-      "Users can register and login through email/password, google or github account. Users can make order for a specific car repair service as well as add/edit services. User authorization has been implemented using JWT on the server side",
-    tools: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "React.js",
-      "Firebase",
-      "Tailwind CSS",
-    ],
-    liveLink: "https://www.google.com",
-    frontEndLink: "https://www.google.com",
-    backEndLink: "https://www.google.com",
+      "Foodverse is a recipe ingredient management app built with React, TailwindCSS, and JavaScript. With this app, you can keep track of all the ingredients you have in your kitchen, and build recipes with the ingredients you already have on hand. Foodverse streamlines the recipe building process with a modern, intuitive interface and makes it easy to stay organized and save time in the kitchen.",
+    tools: ["React.js", "Tailwind CSS", "javascript"],
+    liveLink: "foodverse-sakib.netlify.app/",
+    frontEndLink: "https://github.com/sakibb77/foodverse",
   },
   {
     id: 2,
-    title: "REACT SHOPPING — AN ELECTRONICS STORE",
-    img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1675265034/Personal%20Portfolio%202/shopping-1_nx6sfr.jpg",
+    title: "Tech-Alpha - Online Tech E-Commerce Website",
+    img1: "https://res.cloudinary.com/doywcvyxn/image/upload/v1675757404/personal-portfolio/tech-alpha-showcase_hz3gkm.jpg",
     img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1675265034/Personal%20Portfolio%202/shopping-2_z3boxd.jpg",
     description:
       "Shopping cart functionality has been implemented using Redux Toolkit. All the product data has been served via JSON server and fetched using RTK Query. Cart items also saved into the local storage of the client’s browser",
@@ -33,11 +24,13 @@ const data = [
       "React.js",
       "Redux.js",
       "Redux Toolkit",
-      "RTK Query",
+      "redux-thunk",
       "Tailwind CSS",
+      "axios",
+      "javascript",
     ],
-    liveLink: "https://www.google.com",
-    frontEndLink: "https://www.google.com",
+    liveLink: "https://tech-alpha.netlify.app/",
+    frontEndLink: "https://github.com/sakibb77/tech-alpha",
   },
 ];
 

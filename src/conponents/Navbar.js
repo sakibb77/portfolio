@@ -35,7 +35,7 @@ const Navbar = ({ footerNav }) => {
           {footerNav ? "go to top" : "sakib biswas"}
         </HashLink>
       </div>
-      <ul className="links flex flex-col gap-3 w-[180px]">
+      <ul className="links flex flex-col gap-3 w-[200px]">
         <li className="self-start">
           <HashLink smooth to={"#home"} className="link-item" ref={link2Ref}>
             home
